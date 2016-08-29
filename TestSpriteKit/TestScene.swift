@@ -35,6 +35,7 @@ class TestScene:SKScene {
         }
     }
 
+
     
     //画面タッチ移動時の呼び出しメソッド
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
