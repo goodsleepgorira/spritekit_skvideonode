@@ -12,6 +12,9 @@
 		88EB834C1D74319600CBB92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EB834A1D74319600CBB92D /* Main.storyboard */; };
 		88EB834E1D74319600CBB92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EB834D1D74319600CBB92D /* Assets.xcassets */; };
 		88EB83511D74319600CBB92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EB834F1D74319600CBB92D /* LaunchScreen.storyboard */; };
+		88EB83591D7431BA00CBB92D /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB83581D7431BA00CBB92D /* TestScene.swift */; };
+		88EB835D1D74326E00CBB92D /* TestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 88EB835C1D74326E00CBB92D /* TestScene.sks */; };
+		88EB835F1D74365D00CBB92D /* bell_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88EB835E1D74365D00CBB92D /* bell_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		88EB834D1D74319600CBB92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88EB83501D74319600CBB92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88EB83521D74319600CBB92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88EB83581D7431BA00CBB92D /* TestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
+		88EB835C1D74326E00CBB92D /* TestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = TestScene.sks; path = ../TestScene.sks; sourceTree = "<group>"; };
+		88EB835E1D74365D00CBB92D /* bell_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				88EB83461D74319600CBB92D /* AppDelegate.swift */,
 				88EB83481D74319600CBB92D /* ViewController.swift */,
 				88EB834A1D74319600CBB92D /* Main.storyboard */,
+				88EB83581D7431BA00CBB92D /* TestScene.swift */,
+				88EB835C1D74326E00CBB92D /* TestScene.sks */,
+				88EB835E1D74365D00CBB92D /* bell_sound.mp3 */,
 				88EB834D1D74319600CBB92D /* Assets.xcassets */,
 				88EB834F1D74319600CBB92D /* LaunchScreen.storyboard */,
 				88EB83521D74319600CBB92D /* Info.plist */,
@@ -123,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EB83511D74319600CBB92D /* LaunchScreen.storyboard in Resources */,
+				88EB835F1D74365D00CBB92D /* bell_sound.mp3 in Resources */,
 				88EB834E1D74319600CBB92D /* Assets.xcassets in Resources */,
+				88EB835D1D74326E00CBB92D /* TestScene.sks in Resources */,
 				88EB834C1D74319600CBB92D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EB83491D74319600CBB92D /* ViewController.swift in Sources */,
+				88EB83591D7431BA00CBB92D /* TestScene.swift in Sources */,
 				88EB83471D74319600CBB92D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
