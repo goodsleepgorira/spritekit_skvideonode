@@ -22,7 +22,7 @@ class TestScene:SKScene {
 
 
 
-    //画面タッチ時の呼び出しメソッド
+    //画面タッチ開始時の呼び出しメソッド
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
         //タッチしたノードを取得する。
@@ -30,7 +30,7 @@ class TestScene:SKScene {
         let node = nodeAtPoint(location) as! SKSpriteNode
         
         if(node == monkey || node == speaker) {
-            //ターゲットに猿ノードを設定する。
+            //タッチしたノードをターゲットに設定する。
             targetNode = node
         }
     }
