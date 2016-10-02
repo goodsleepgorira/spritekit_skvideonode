@@ -7,27 +7,45 @@ import SpriteKit
 
 class TestScene:SKScene {
     
+    var maruta1:SKSpriteNode!
+    var maruta2:SKSpriteNode!
+    
+    var target:SKSpriteNode!
+
     
     //現在シーン設定時の呼び出しメソッド
     override func didMove(to view: SKView) {
+
+        //SKSファイルに配置した丸太ノードを取得する。
+        maruta1 = self.childNode(withName: "maruta1") as? SKSpriteNode
+        maruta2 = self.childNode(withName: "maruta2") as? SKSpriteNode
         
-        //シーンに配置するノードを作成する。
-        let background = SKSpriteNode(imageNamed: "field")
-        let monkey1 = SKSpriteNode(imageNamed: "monkey")
-        let monkey2 = SKSpriteNode(imageNamed: "monkey")
-        let bird = SKSpriteNode(imageNamed: "bird_brown")
-        
-        //ノードの座標を指定する。
-        background.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-        monkey1.position =  CGPoint(x: self.frame.width*1/3, y: self.frame.height/2)
-        monkey2.position =  CGPoint(x: self.frame.width*2/3, y: self.frame.height/2)
-        bird.position = CGPoint(x: self.frame.width*2/3, y: self.frame.height*4/5)
-        
-        //ノードをシーンに配置する。
-        self.addChild(background)
-        self.addChild(monkey1)
-        self.addChild(monkey2)
-        self.addChild(bird)        
+        target = maruta1
     }
     
- }
+    
+    //画面タッチ開始時の呼び出しメソッド
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+        //タッチしたノードを取得する。
+        let location = touches.first!.location(in: self)
+        let node = atPoint(location) as! SKSpriteNode
+        
+        //タッチしたノードが丸太の場合、ターゲットノードに設定する。
+        if(node == maruta1 || node == maruta2){
+            target = node
+        }
+    }
+    
+    
+    //画面タッチ移動時の呼び出しメソッド
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+        //タッチした座標を取得する。
+        let location = touches.first!.location(in: self)
+        
+        //ターゲットノードをタッチした座標まで移動するアクションを実行する。
+        let action = SKAction.move(to: CGPoint(x:location.x, y:location.y), duration:0.1)
+        target.run(action)
+    }
+}
