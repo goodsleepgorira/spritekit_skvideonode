@@ -11,22 +11,23 @@ class TestScene:SKScene {
     var maruta2:SKSpriteNode!
     
     var target:SKSpriteNode!
-
+    
     
     //現在シーン設定時の呼び出しメソッド
     override func didMove(to view: SKView) {
-
+        
         //SKSファイルに配置した丸太ノードを取得する。
         maruta1 = self.childNode(withName: "maruta1") as? SKSpriteNode
         maruta2 = self.childNode(withName: "maruta2") as? SKSpriteNode
         
+        //丸太をターゲットノードに設定する
         target = maruta1
     }
     
     
     //画面タッチ開始時の呼び出しメソッド
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-
+        
         //タッチしたノードを取得する。
         let location = touches.first!.location(in: self)
         let node = atPoint(location) as! SKSpriteNode
@@ -40,7 +41,7 @@ class TestScene:SKScene {
     
     //画面タッチ移動時の呼び出しメソッド
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-
+        
         //タッチした座標を取得する。
         let location = touches.first!.location(in: self)
         
