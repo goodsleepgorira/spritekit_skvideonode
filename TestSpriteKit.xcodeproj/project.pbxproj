@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88D12C821DA8B22D000FD335 /* TestTile.sks in Resources */ = {isa = PBXBuildFile; fileRef = 88D12C811DA8B22D000FD335 /* TestTile.sks */; };
 		88EB83471D74319600CBB92D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB83461D74319600CBB92D /* AppDelegate.swift */; };
 		88EB83491D74319600CBB92D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EB83481D74319600CBB92D /* ViewController.swift */; };
 		88EB834C1D74319600CBB92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EB834A1D74319600CBB92D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88D12C811DA8B22D000FD335 /* TestTile.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = TestTile.sks; path = ../TestTile.sks; sourceTree = "<group>"; };
 		88EB83431D74319500CBB92D /* TestSpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSpriteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EB83461D74319600CBB92D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EB83481D74319600CBB92D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				88EB834A1D74319600CBB92D /* Main.storyboard */,
 				88EB83581D7431BA00CBB92D /* TestScene.swift */,
 				88EB835C1D74326E00CBB92D /* TestScene.sks */,
+				88D12C811DA8B22D000FD335 /* TestTile.sks */,
 				88EB834D1D74319600CBB92D /* Assets.xcassets */,
 				88EB834F1D74319600CBB92D /* LaunchScreen.storyboard */,
 				88EB83521D74319600CBB92D /* Info.plist */,
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D12C821DA8B22D000FD335 /* TestTile.sks in Resources */,
 				88EB83511D74319600CBB92D /* LaunchScreen.storyboard in Resources */,
 				88EB834E1D74319600CBB92D /* Assets.xcassets in Resources */,
 				88EB835D1D74326E00CBB92D /* TestScene.sks in Resources */,

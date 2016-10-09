@@ -26,6 +26,5 @@ class ViewController: UIViewController {
         //現在シーンを設定する。
         skView.presentScene(scene)
         
-        
     }
 }
